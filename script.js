@@ -57,7 +57,7 @@ function renderDate() {
         day = date.querySelector('.day');
 
   weekday.innerHTML = `${d.weekday}, `;
-  month.innerHTML = d.month;
+  month.innerHTML = `${d.month} `;
   day.innerHTML = d.day;
 }
 
