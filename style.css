@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  transition: .3s;
 }
 
 body {
@@ -84,16 +83,20 @@ img[src=""] {
 
 .loading img {
   opacity: 0;
+  transition: .3s;
 }
 
 .loaded img {
   opacity: 1;
+  transition: .3s;
 }
 
 .loading header {
   opacity: 0;
+  transition: .3s;
 }
 
 .loaded header {
   opacity: 1;
+  transition: .3s;
 }
