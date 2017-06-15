@@ -91,12 +91,20 @@ img[src=""] {
   transition: .3s;
 }
 
-.loading header {
+.loading .time,
+.loading .date {
   opacity: 0;
-  transition: .3s;
+  transform: translateY(5px);
+  transition: .75s;
 }
 
-.loaded header {
+.loaded .time,
+.loaded .date {
   opacity: 1;
-  transition: .3s;
+  transform: translateY(0);
+  transition: .5s;
+}
+
+.loaded .date {
+  transition-delay: .15s;
 }
