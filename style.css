@@ -105,6 +105,10 @@ img[src=""] {
   transition: .5s;
 }
 
-.loaded .date {
+.loaded .time {
   transition-delay: .15s;
+}
+
+.loaded .date {
+  transition-delay: .25s;
 }
