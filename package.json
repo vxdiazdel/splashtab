@@ -1,0 +1,23 @@
+{
+  "name": "splashtab",
+  "version": "0.0.1",
+  "description": "Load a new image from unsplash in each tab",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "npm run babel script.js --out-file script.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vxdiazdel/splashtab.git"
+  },
+  "author": "Victor Diaz de Leon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vxdiazdel/splashtab/issues"
+  },
+  "homepage": "https://github.com/vxdiazdel/splashtab#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
+}
