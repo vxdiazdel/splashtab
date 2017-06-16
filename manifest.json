@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Splash Tab",
-  "version": "0.1",
-  "description": "Load a new image from unsplash in each tab",
+  "version": "0.0.1",
+  "description": "Load a new image from Unsplash in each tab",
   "author": "Victor Diaz de Leon",
   "browser_action": {
     "default_icon": "icon.png"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
-  }
+  },
+  "permissions": ["tabs"]
 }
