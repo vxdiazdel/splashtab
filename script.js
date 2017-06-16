@@ -2,6 +2,16 @@ const width = window.outerWidth;
 const height = window.outerHeight;
 const bg = document.getElementById('bg');
 
+const gradients = [
+  {left: '#24C6DC', right: '#514A9D'},
+  {left: '#3A1C71', right: '#FFAF7B'},
+  {left: '#43C6AC', right: '#191654'},
+  {left: '#3494E6', right: '#EC6EAD'},
+  {left: '#DD5E89', right: '#F7BB97'}
+];
+const index = Math.floor(Math.random() * 5);
+
+document.body.style.background = `linear-gradient(to right, ${gradients[index].left}, ${gradients[index].right})`;
 bg.src = `https://source.unsplash.com/collection/135648`;
 
 // Set time
@@ -67,3 +77,7 @@ window.onload = function() {
     document.body.classList.remove('loading');
     document.body.classList.add('loaded');
 }
+
+chrome.browserAction.onClicked.addListener(function() {
+  chrome.tabs.create({});
+});
