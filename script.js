@@ -6,8 +6,8 @@ const gradients = [
   {left: '#24C6DC', right: '#514A9D'},
   {left: '#3A1C71', right: '#FFAF7B'},
   {left: '#43C6AC', right: '#191654'},
-  {left: '#3494E6', right: '#EC6EAD'},
-  {left: '#DD5E89', right: '#F7BB97'}
+  {left: '#5f2c82', right: '#49a09d'},
+  {left: '#4776E6', right: '#8E54E9'}
 ];
 const index = Math.floor(Math.random() * 5);
 
