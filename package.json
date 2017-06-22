@@ -1,6 +1,6 @@
 {
   "name": "splashtab",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Load a new image from unsplash in each tab",
   "main": "script.js",
   "scripts": {
