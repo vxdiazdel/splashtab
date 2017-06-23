@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Splash Tab",
+  "name": "Tab Splash",
   "version": "1.0.0",
-  "description": "Load a new image from Unsplash in each tab",
+  "description": "This extension styles your new tab page in Chrome to show a striking nature background from Unsplash.com, along with the current time and date.",
   "author": "Victor Diaz de Leon",
   "browser_action": {
     "default_icon": "icon.png"
