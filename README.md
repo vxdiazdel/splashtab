@@ -1,6 +1,9 @@
-# SplashTab 🌊
+# SplashTab 🌊 
 
 A Chrome extension that styles your new tab page to show a striking image from Unsplash.com along with the current time and date.
+
+Try it out [here](https://splashtab.netlify.app)! 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dfb2a09a-424e-4c63-acc0-f73e49c6303f/deploy-status)](https://app.netlify.com/projects/splashtab/deploys)
 
 <img src="screenshot.png" height="auto" width="100%" />
 
