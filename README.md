@@ -5,7 +5,7 @@ A Chrome extension that styles your new tab page to show a striking image from U
 <img src="screenshot.png" height="auto" width="100%" />
 
 To run locally, you can do the following:
-1. sign up for an [Unsplash developers API key](https://unsplash.com/developers).
+1. Sign up for an [Unsplash developers API key](https://unsplash.com/developers).
 
 2. Create a `.env.local` file and add the following:
 ```javascript
@@ -21,4 +21,4 @@ pnpm install
 pnpm dev
 ```
 
-<sup>Made with ❤️ using Vite, Typescript & CSS. ©️2025</sup>
+<sup>Made with ❤️ using Vite, Typescript & CSS. ©️ 2025</sup>
