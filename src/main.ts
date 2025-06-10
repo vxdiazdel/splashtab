@@ -1,7 +1,7 @@
 import './style.css';
 import { randomGradient } from './gradients';
 import { renderDate, renderTime } from './time';
-import { fetchRandomImageUrl } from './image';
+import { fetchRandomImage, renderPhotoCredit } from './image';
 
 const onLoaded = async () => {
   const body = document.body;
@@ -9,6 +9,7 @@ const onLoaded = async () => {
   const dateTimeEl = document.querySelector('.date-time') as HTMLElement;
   const timeEl = dateTimeEl.querySelector('.time') as HTMLElement;
   const dateEl = dateTimeEl.querySelector('.date') as HTMLElement;
+  const photoCreditEl = document.querySelector('.photo-credit') as HTMLElement;
 
   // Load random gradient before fetching image
   const gradient = randomGradient();
@@ -24,12 +25,18 @@ const onLoaded = async () => {
   // Add loaded class to date-time parent
   requestIdleCallback(() => dateTimeEl.classList.add('loaded'));
 
-  // Fetch random image
-  const imageUrl = await fetchRandomImageUrl();
-  if (imageUrl !== '') {
-    imgEl.src = imageUrl;
+  // Fetch random image data
+  const { user, imgUrl } = await fetchRandomImage();
+  if (imgUrl !== undefined) {
+    imgEl.src = imgUrl;
     requestIdleCallback(() => imgEl.classList.add('loaded'));
   }
+
+  // Render photo credit
+  renderPhotoCredit(photoCreditEl, user);
+
+  // Add loaded class to photo credit
+  requestIdleCallback(() => photoCreditEl.classList.add('loaded'));
 };
 
 document.addEventListener('DOMContentLoaded', onLoaded);

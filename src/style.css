@@ -34,36 +34,40 @@ body {
   align-items: flex-end;
 
   &:before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  display: block;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to top,
-    hsl(0, 0%, 0%) 0%,
-    hsla(0, 0%, 0%, 0.738) 19%,
-    hsla(0, 0%, 0%, 0.541) 34%,
-    hsla(0, 0%, 0%, 0.382) 47%,
-    hsla(0, 0%, 0%, 0.278) 56.5%,
-    hsla(0, 0%, 0%, 0.194) 65%,
-    hsla(0, 0%, 0%, 0.126) 73%,
-    hsla(0, 0%, 0%, 0.075) 80.2%,
-    hsla(0, 0%, 0%, 0.042) 86.1%,
-    hsla(0, 0%, 0%, 0.021) 91%,
-    hsla(0, 0%, 0%, 0.008) 95.2%,
-    hsla(0, 0%, 0%, 0.002) 98.2%,
-    hsla(0, 0%, 0%, 0) 100%
-  );
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      hsl(0, 0%, 0%) 0%,
+      hsla(0, 0%, 0%, 0.738) 19%,
+      hsla(0, 0%, 0%, 0.541) 34%,
+      hsla(0, 0%, 0%, 0.382) 47%,
+      hsla(0, 0%, 0%, 0.278) 56.5%,
+      hsla(0, 0%, 0%, 0.194) 65%,
+      hsla(0, 0%, 0%, 0.126) 73%,
+      hsla(0, 0%, 0%, 0.075) 80.2%,
+      hsla(0, 0%, 0%, 0.042) 86.1%,
+      hsla(0, 0%, 0%, 0.021) 91%,
+      hsla(0, 0%, 0%, 0.008) 95.2%,
+      hsla(0, 0%, 0%, 0.002) 98.2%,
+      hsla(0, 0%, 0%, 0) 100%
+    );
   }
+}
+
+a, a:active, a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 header {
   position: relative;
-  z-index: 1;
   margin: 2rem;
   text-align: right;
   letter-spacing: 0;
@@ -80,6 +84,14 @@ header {
     font-weight: 200;
     word-spacing: -1.5rem;
   }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Image states */
@@ -126,5 +138,19 @@ header {
     .date {
       transition-delay: .25s;
     }
+  }
+}
+
+/* Photo credit states */
+.photo-credit {
+  margin: 2rem;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity .5s ease-out, transform .5s ease-out; 
+
+  &.loaded {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .3s;
   }
 }
