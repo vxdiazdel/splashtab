@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SplashTab",
+  "version": "1.0.0",
+  "description": "A Chrome extension that styles your new tab page to show a striking image from Unsplash.com along with the current time and date.",
+  "author": "Victor Diaz de Leon",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
