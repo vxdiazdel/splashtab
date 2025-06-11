@@ -24,6 +24,14 @@ export const fetchRandomImage = async (): Promise<ImageResponse> => {
   };
 };
 
+export const renderImage = (imgEl: HTMLImageElement, url: string) => {
+  imgEl.onload = () => {
+    imgEl.classList.add('loaded');
+  };
+
+  imgEl.src = url;
+};
+
 export const renderPhotoCredit = (el: HTMLElement, user: User) => {
   const content = user?.url
     ? `<a href="${user.url}" target="_blank" rel="noopener noreferrer">📸 ${user?.firstName} ${user?.lastName}</a>`

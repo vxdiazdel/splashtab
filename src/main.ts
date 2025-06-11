@@ -1,7 +1,7 @@
 import './style.css';
 import { randomGradient } from './gradients';
 import { renderDate, renderTime } from './time';
-import { fetchRandomImage, renderPhotoCredit } from './image';
+import { fetchRandomImage, renderImage, renderPhotoCredit } from './image';
 
 const onLoaded = async () => {
   const body = document.body;
@@ -28,8 +28,7 @@ const onLoaded = async () => {
   // Fetch random image data
   const { user, imgUrl } = await fetchRandomImage();
   if (imgUrl !== undefined) {
-    imgEl.src = imgUrl;
-    requestIdleCallback(() => imgEl.classList.add('loaded'));
+    renderImage(imgEl, imgUrl);
   }
 
   // Render photo credit
