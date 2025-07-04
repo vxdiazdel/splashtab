@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:package": "pnpm run build && cp -r icons dist/icons && cp manifest.json dist && cd dist && zip -r SplashTab.zip ./",
     "preview": "vite preview"
   },
   "devDependencies": {
